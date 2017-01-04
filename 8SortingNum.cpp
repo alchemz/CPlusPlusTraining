@@ -1,34 +1,43 @@
-/*Array
-array: a list of something
-int a[n]: a list of integers
-index starting from 0, to n-1
-*/
-
-
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
-int main()
+int main(int argc, char *argv[])
 {
-	
+	int num[10] = { 18,-10,2,4,6,-12,-8,-6,13,-1 };
+	int temp;
 
-	float b[5] = { 1.1,3.2,2.9,5.1,1.6 };
-	for (int j = 0; j <=6; j++)
+	cout << "Ascending Sort : \n\n";
+
+	for (int i = 0; i <= 10; i++)
 	{
-		for(int k=0;k<j;k++)
+		for (int j = i + 1; j <= 10; j++)
 		{
-			if (b[j] > b[j + 1])
+			if (num[i]>num[j])
 			{
-				float thre;
-				thre = b[j];
-				b[j] = b[j + 1];
-				b[j + 1] = thre;		
-
+				temp = num[i];
+				num[i] = num[j];
+				num[j] = temp;
 			}
 		}
-	
-		cout << b[j] << " ";
+		cout << num[i] << "\n";
 	}
-	return 0;
 
+	cout << "\nDescending Sort : \n\n";
+
+	for (int i = 0; i <= 10; i++)
+	{
+		for (int j = i + 1; j <= 10; j++)
+		{
+			if (num[i]<num[j])
+			{
+				temp = num[j];
+				num[j] = num[i];
+				num[i] = temp;
+			}
+		}
+		cout << num[i] << "\n";
+	}
+
+	return 0;
 }
