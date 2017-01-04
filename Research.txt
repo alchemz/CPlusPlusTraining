@@ -1,2 +1,0 @@
-stereoscopic rendering
-https://code.msdn.microsoft.com/windowsapps/Direct3D-111-Simple-Stereo-9b2b61aa
