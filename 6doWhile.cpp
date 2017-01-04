@@ -12,13 +12,23 @@ int main()
 
 	const string password = "3018";
 	string entered;
+
 	do {
 		cout << "Enter the password:" << endl;
 		cin >> entered;
+
+		if (entered != password)
+		{
+			cout << "Access denied\n";
+		}
 	} while (entered != password);
-	if (entered == password)
+
+
+	/*if (entered == password)
 	{
 		cout << "Door opened\n";
-	}
+	}*/
+
+	cout << "Door opened\n";
 		return 0;
 }
