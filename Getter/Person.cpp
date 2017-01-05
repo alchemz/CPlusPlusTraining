@@ -3,24 +3,21 @@
 
 using namespace std;
 
-string PERSON_N::toString()
+PERSON_NAME::PERSON_NAME()
 {
-	return "This person's name is:"+name;
+	name = "Ling";
 }
-
-void PERSON_N::setAName(string newName)
-{
-	name = newName;
-}
-
-
-//use get method
-PERSON_N::PERSON_N()
-{
-	name = "HH";
-}
-
-string PERSON_N::getName()
+string PERSON_NAME::getName()
 {
 	return name;
+}
+
+string PERSON_NAME::toString()
+{
+	return "This person's name is" + name;
+}
+
+void PERSON_NAME::setName(string newName)
+{
+	name = newName;
 }
