@@ -4,7 +4,12 @@
 using namespace std;
 void Cat::speak()
 {
+    if(happy)
+    {
     cout<<"Meouw\n"<<endl;
+    }else{
+    cout<<"SSS\n"<<endl;
+    }
 }
 
 void Cat::makeHappy()
