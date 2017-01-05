@@ -3,8 +3,10 @@
 
 int main()
 {
+  {
   CAT makeNoise;
   makeNoise.speak();
+  }//dellocate memory
   
   return 0;
 }
