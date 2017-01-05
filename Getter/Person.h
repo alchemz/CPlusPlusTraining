@@ -5,17 +5,16 @@
 #include <string>
 using namespace std;
 
-class PERSON_N
+class PERSON_NAME
 {
-private:
-	string name; //declare a variables
+private: 
+	string name;
 public:
-	string toString(); //return the string name
-	void setAName(string newName); //get the name of string
-	
-	//use get method 
+	//use get method
+	PERSON_NAME();
 	string getName();
-	PERSON_N();
+	void setName(string newName);
+	string toString();
 };
 
 #endif
