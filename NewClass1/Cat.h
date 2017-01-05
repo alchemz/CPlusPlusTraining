@@ -9,6 +9,6 @@ private:
       bool happy;
 public:
       void speak();
-}
+};
 
 #endif
