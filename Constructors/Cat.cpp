@@ -12,7 +12,7 @@ void CAT::speak()
   }
 }
 
-CAT::Cat()
+CAT::CAT()
 {
 cout<<"Cat created"<<endl;
 happy=true;
