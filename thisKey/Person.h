@@ -4,7 +4,6 @@ this->name=name;
 
 this//a pointer variable pointing to the memory location of the object
 */
-
 #ifndef PERSON_H
 #define PERSON_H
 
@@ -14,13 +13,13 @@ using namespace std;
 
 class Person
 {
-public: 
-string toString();
-Person();
-
 private:
-int age;
-string name;
-}
+	int age;
+	string name;
+
+public:
+	string toString();
+	Person(string name, int age);
+};
 
 #endif
