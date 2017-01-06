@@ -1,14 +1,28 @@
 #include <iostream>
 #include "Person.h"
-using namespace std;
+#include <sstream>
 
-string Person::Person toString()
-{
-    return name;
-}
-
+/*
 Person::Person()
 {
-this ->name=name;
-this ->age=age;
+	//this->name = name;
+	//this->age = age;
+	name = "ling";
+		age = 10;
 }
+*/
+
+Person::Person(string name, int age)
+{
+	this->name = name;
+	this->age = age;
+}
+
+string Person::toString()
+{
+	stringstream ss;
+	ss << name;
+	ss << age;
+		return ss.str();
+}
+
