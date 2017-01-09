@@ -58,5 +58,9 @@ delete [] pAnimal;
 
 char *pMen= new char[1000]; //char is one byte, allocated 1000 bytes;
 delete []pMen;
+  char c='a';
+  string name(5, c);//5 characters of the string
+  //char is basically an integer type
+  cout<<name<<endl;
 return 0;
 }
