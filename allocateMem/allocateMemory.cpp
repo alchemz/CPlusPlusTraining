@@ -50,11 +50,11 @@ int main()
 {
 //allocate the entire array
 Animal *pAnimal= new Animal[10]; //how many objects, how many animals created
-pAnimal[5].setName("Geogre"); //allocate the first six
+pAnimal[5].setName("Geogre"); //allocate the index 5
 
 pAnimal[5].speak();
 //when free memory, put []Animal
-free [] pAnimal;
+delete [] pAnimal;
 
 char *pMen= new char[1000]; //char is one byte, allocated 1000 bytes;
 delete []pMen;
