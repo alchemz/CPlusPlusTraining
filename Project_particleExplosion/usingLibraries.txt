@@ -1,0 +1,4 @@
+/*
+A program showing fireworks effect with mathematics and gaming concept
+*/
+
