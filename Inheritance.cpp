@@ -1,3 +1,4 @@
+//
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,11 @@ public:
     cout<<"Grrrr"<<endl;
     }
 };
-
+//a new class with more functions
+//I do not understand why do not we just change the original class
+//why do we need to create another class
+//Cat is a subclass of Animal
+//Animal is a superclass of Cat
 class Cat:public Animal{
 public:
     void jump()
@@ -17,6 +22,7 @@ public:
     }
 };
 
+//Tiger is a subclass of cat
 public Tiger:public Cat
 {
 public:
