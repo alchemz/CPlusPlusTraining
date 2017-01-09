@@ -1,3 +1,15 @@
+/*
+New operator allocate memory for a single class
+we can use pointer with bracket
+(*pCat1).setName();
+(*pCat1).speak();
+
+or
+pCat1->SetName();
+pCat1->speak();
+
+//when allocate memory , you need to free memory later
+*/
 #include<iostream>
 #include <string>
 using namespace std;
