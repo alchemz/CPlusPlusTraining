@@ -38,6 +38,8 @@ Animal *createAnimal(){
     Animal *pAnimal = new Animal();
     pAnimal->setName("Bertie");
     return pAnimal;
+    //return an object from a function
+    //with pointer, the memory will not be reallocate until we call the new function
 }
 
 int main()
