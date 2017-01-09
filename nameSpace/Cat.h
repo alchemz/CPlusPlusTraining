@@ -1,6 +1,7 @@
 #ifndef
 #define
 
+namespace cats{
 class Cat
 {
 public:
@@ -8,4 +9,5 @@ public:
   virtual ~Cat();
   void speak();
 };
+}
 #endif
