@@ -15,5 +15,7 @@ int main()
   cats::Cat cat3;
   cat3.speak();
   
+  cout<<xlz::name<<endl;
+  
   return 0;
 }
