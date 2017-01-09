@@ -14,7 +14,7 @@ int main()
   
   //find the start and the end pointer of the text array
   char *pStart=text;
-  char *End=text+nChars+1;
+  char *End=text+nChars-1;
   
   while(pStart <pEnd)
   {
